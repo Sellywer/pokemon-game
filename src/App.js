@@ -21,11 +21,12 @@ function App() {
       <Layout 
         title="This is title layout2"
         descr="This is description layout2"
-        urlBg={background2}
+        colorBg="red"
       />
       <Layout 
         title="This is title layout3"
         descr="This is description layout3"
+        urlBg={background2}
       />
       <Footer />
     </div>

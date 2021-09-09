@@ -1,8 +1,8 @@
 import s from './style.module.css'
 
-const Layout = ({ title, descr, urlBg, colorBg }) => {
+const Layout = ({ title, descr, urlBg = "", colorBg = "" }) => {
 
-  const background = urlBg? {backgroundImage: `url(${urlBg})` , backgroundSize: "cover", backgroundRepeat: "no-repeat"} : {backgroundColor: `${colorBg='red'}` };
+  const background = {background: colorBg, backgroundImage: `url(${urlBg})`};
 
   return (
     <section style={background} className={s.root}>
